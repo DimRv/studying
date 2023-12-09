@@ -13,7 +13,7 @@ hour_salary_in30 = round(day_salary_in30/24, 2)
 hour_salary_in31 = round(day_salary_in31/24, 2)
 year_salary = round(real_salary * 12)
 year_tax = round(tax * 12)
-month_to_millioner = round((1000000 / real_salary, 2))
+month_to_millioner = round(1000000/real_salary, 2)
 print(f'Каждый месяц вы будете отдавать в качестве налога: {tax} рублей.')
 print(f'Ваш реальный заработок составит: {real_salary} рублей.')
 print(f'При 30-дневном месяце средний доход составит: {day_salary_in30} рублей в сутки '
