@@ -1,7 +1,7 @@
 import decimal, fractions
 
 """
-В python числа представлены следующими типами:
+В python числа могут представлены следующими типами:
 - bool
 - int
 - float
@@ -14,7 +14,7 @@ t1 = True
 t2 = 10
 t3 = .1
 t4 = 30 + 4j
-t5 = decimal.Decimal(3.4123)
+t5 = decimal.Decimal(3.1423)
 t6 = fractions.Fraction(8, 10)
 t7 = {3, 5, 6, 7, 3, 5, 6}
 print(t1, type(t1))
