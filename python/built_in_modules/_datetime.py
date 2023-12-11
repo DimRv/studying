@@ -76,8 +76,26 @@ print(date2.resolution)
 
 
 print('-'*30, 'time', '-'*30)
-time1 = datetime.time(23, 1, 30)
-time2 = datetime.time(0, 0, 0)
+#Создание объекта time
+time1 = datetime.time(23, 11, 30, 122255)
+time2 = datetime.time(10, 20, 30, 123456)
+print(time1, time2, type(time1))
+print(datetime.time.fromisoformat('10:30'), type(datetime.time.fromisoformat('10:30')))
+print(time1.replace(10), type(time1))
+#Свойства объекта time
+print(time1.hour)
+print(time1.minute)
+print(time1.dst())
+print(time1.fold)
+print(time1.isoformat())
+print(time1.max)
+print(time1.microsecond)
+print(time1.min)
+print(time1.resolution)
+print(time1.second)
+print(time1.tzinfo)
+print(time1.tzname())
+print(time1.utcoffset())
 
 print('-'*30, 'datetime', '-'*30)
 dt1 = datetime.datetime.now()
