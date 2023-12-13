@@ -3,8 +3,9 @@
 Неизменяемый тип данных
 """
 
-
+#Интроспекция
 help(1)
+print([i for i in dir(int) if i[0] != '_'])
 
 #Объявление целых чисел
 
@@ -56,6 +57,6 @@ print((255+4j).real)
 help(int.as_integer_ratio)
 print((7).as_integer_ratio())
 #denominator
-
+print((7).denominator)
 #numerator
-print(type(50-5j))
+print((7).numerator)
