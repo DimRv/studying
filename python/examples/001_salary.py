@@ -1,3 +1,8 @@
+"""C помощью внешнего json файла определяет количество выходных и рабочих дней в каждом месяце и оценивает 'ценность'
+рабочего дня в разные месяцы
+
+pip install requests при необходимости
+"""
 import json
 import requests
 import datetime
@@ -40,8 +45,8 @@ month_names = ['январь', 'февраль', 'март', 'апрель', 'м
                'декабрь']
 
 
-print(f'ОТЧЕТ ПО РАБОЧИМ ДНЯМ ЗА {year} ГОД:')
+print('\n', f'Ценность рабочего дня в разные месяцы за {year} ГОД:', sep='')
 for num, data in enumerate(calendar):
     print('-'*20, month_names[num], '-'*20)
-    print(f"За {month_names[num]} было {calendar[num][0]} рабочих и {calendar[num][1]} выходных дней.")
-    print(f"Ваш рабочий день оценивался в : {round(real_salary/calendar[num][0], 2)} рублей")
+    print(f"За {month_names[num]} {calendar[num][0]} рабочих и {calendar[num][1]} выходных дней.")
+    print(f"Ваш доход за день: {round(real_salary/calendar[num][0], 2)} рублей")
