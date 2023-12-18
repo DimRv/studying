@@ -1,0 +1,4 @@
+"""Благодарности"""
+
+help(credits)
+credits()
