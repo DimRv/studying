@@ -6,7 +6,7 @@
 
 #Интроспекция:
 help(str)
-print([i for i in dir(str) if i[0] != '_'])
+print([i for i in dir(str) if i[0] != '_'], len([i for i in dir(str) if i[0] != '_']))
 
 #СОЗДАНИЕ:
 s1 = 'string cтрока'
@@ -91,8 +91,6 @@ print("-".join(['hi', 'all']))
 print('Иванов'.translate(str.maketrans({'И': 'I', "в": "v"})))
 print("red;house;blue".partition(';'))
 print("red;house;blue".rpartition(';'))
-print('Some text with spaces'.rsplit(' '))
-print('Some text with spaces'.split(' '))
 print('Hi\nmy\nfriend!'.splitlines())
 
 
