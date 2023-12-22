@@ -15,4 +15,6 @@
 - filter
 - range
 - map
+- reversed
+-
 """
