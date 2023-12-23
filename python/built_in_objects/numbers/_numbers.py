@@ -8,7 +8,7 @@ import decimal, fractions
 - complex
 - decimal (доп модуль)
 - fraction (доп модуль)
-- set
+- set (числа или последовательность?)
 """
 t1 = True
 t2 = 10

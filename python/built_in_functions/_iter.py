@@ -1,4 +1,9 @@
-"""Возвращает объект iter из способного к итерации объекта"""
+"""Возвращает объект iter из способного к итерации объекта
+или из callable объекта пока тот не достигнет sentinel
+
+iter(iterable) -> iterator
+iter(callable, sentinel) -> iterator
+"""
 
 help(iter)
 
@@ -21,7 +26,7 @@ class Test:
         self.ind += 1
         return val
 
-a2 = iter(Test(), 3)
+a2 = iter(Test(), 'Mike')
 print(next(a2))
 print(next(a2))
 print(next(a2))
