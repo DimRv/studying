@@ -74,6 +74,8 @@ task.set_name("Name") - Задать имя
 task.get_name("Name") - Получить имя
 asyncio.current_task() - получить текущую задачу - либо coro в asyncio.run(coro) или из task.create_task()
 asyncio.all_tasks() - возвращает множество, список всех задач выполняющихся или готовых к выполнению
+
+asyncio.gather(tasks) - группировка объектов, допускающих ожидание
 """
 import asyncio
 help(asyncio)
