@@ -1,3 +1,4 @@
+"""Нужно за 5 попыток угадать случайное число от 1 до 99"""
 from random import randint
 
 with open('003_game_points') as file:
