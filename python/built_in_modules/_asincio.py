@@ -75,7 +75,23 @@ task.get_name("Name") - Получить имя
 asyncio.current_task() - получить текущую задачу - либо coro в asyncio.run(coro) или из task.create_task()
 asyncio.all_tasks() - возвращает множество, список всех задач выполняющихся или готовых к выполнению
 
-asyncio.gather(tasks) - группировка объектов, допускающих ожидание
+asyncio.gather(tasks, coroutines) - группировка объектов, допускающих ожидание, дает преимущества в массовом:
+- запуске через await
+- получении результатов через result
+- отмена через cancel
+- проверка done
+- выполнение функций коллбэк.
+Возвращает asyncio.Future
+
+asyncio.wait(return_when=asyncio.ALL_COMPLETED) - для организации ожидания завершения коллекции asyncio-задач
+return_when=asyncio.ALL_COMPLETED - когда все задачи завершатся
+return_when=asyncio.FIRST_COMPLETED
+done, pending = await asyncio.wait(tasks) - done-множество завершенных задач, pending-не завершенных задач
+
+asyncio.wait_for(aw, timeout) - ожидать завершения выполнения asyncio-задачи или корутины с указанием тайм-аута.
+asyncio.TimeoutError - если  не выполнилась за указанное время
+
+asyncio.shield(task) - защита от отмены выполнения задачи
 """
 import asyncio
 help(asyncio)
