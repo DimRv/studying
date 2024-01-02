@@ -1,0 +1,16 @@
+{{varible_from_context}}
+
+
+{%if latest_question_list %}
+{% else %}
+{% endif %}
+
+
+{% for question in latest_question_list %}
+{{question.question_test}}
+{% endfor %}
+
+
+{%url 'detail' question.id %}
+
+{% csrf_token %}
