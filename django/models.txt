@@ -1,0 +1,13 @@
+1. Изменяем models.py
+2. Создает файл миграции для изменения БД: python manage.py makemigrations
+3. Мигрируем: python manage.py migrate
+
+
+from django.db import models
+
+class Question(models.Model)
+
+question_text = models.CharField(max_length=200)
+pub_date = models.DateTimeField("date published")
+question = models.ForeignKey(Question, on_delete=models.CASCADE)
+votes = models.IntegerField(default=0)
