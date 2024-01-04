@@ -1,4 +1,5 @@
 pip install django
+python -m pip install django-debug-toolbar
 python -m django --version
 django-admin startproject mysite
 python manage.py runserver
