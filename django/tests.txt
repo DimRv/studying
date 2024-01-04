@@ -1,0 +1,18 @@
+Для написания тестов:
+
+1. Создаем в tests.py новый class, унаследованный от TestCase
+2. Создаем метод test_
+3. В методе инициируем запуск теста и какой ожидаем получить результат с помощью self.assetIs
+4. Запускаем manage.py test startapp, который:
+    - ищет подклассы  django.test.TestCase
+    - создает специальную базу данных для тестов
+    - ищет методы, начинающиеся с test
+    - в методе создает экземпляр объекта БД
+    - сравнивает полученное значение теста с self.assertIs
+
+
+class QuestionModelTests(TestCase):
+    def test_was_published_recently_with_future_question(self):
+        time = timezone.now() + datetime.timedelta(days=30)
+        future_question = Question(pub_date=time)
+        self.assertIs(future_question.was_published_recently(), False)

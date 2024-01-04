@@ -9,3 +9,11 @@ python manage.py makemigrations polls
 python manage.py sqlmigrate polls 0001
 python manage.py shell
 python manage.py createsuperuser
+python manage.py test polls
+
+
+Общая концепция:
+1. Получение запроса от пользователя, путем посещения страниц.
+2. Обработка запроса от пользователя urls.py и передача запроса views.py
+3. Views.py должен отдавать ответ, например путем заполнения шаблона (template) контекстом (context)
+4. Models.py для взаимодействия с Базой Данных, по умолчанию SQL-Lite

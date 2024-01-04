@@ -1,7 +1,23 @@
+Общая концепция GenericView:
+1. Берем данные из БД основываясь на запросе переданном по URL
+2. Заполняем шаблон значениями и рендерим страницу
+
+GenericView:
+1. from django.views import generic - загружаем модуль generic
+2.1. class IndexView(generic.ListView) - отобразить список объектов
+2.2. class DetailView(generic.DetailView) - отобразить детальную информацию
+3.1. model = Question - доступ к Базе Данных (автоматически передается в context)
+3.2. def get_queryset(self) - доступ к Базе Данных
+4.1. <app name>/<model_name>_detail.html - шаблон для DetailView
+4.2. <app name>/<model_name>_lisr.html - шаблон для ListView
+4.3. template_name = 'URL' - свой шаблон
+5.1. question_list - автоматически сгенерированный контекст
+
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
+from django.views import generic
 from django.http import Http404
 
 # Create your views here.
@@ -32,3 +48,20 @@ def detail(request, question_id):
 
 def test(request):
     return HttpResponseRedirect(reverse("polls:results"), args=(question_id,))
+
+class IndexView(generic.ListView):
+    template_name = 'polls/index.html'
+    context_object_name = 'latest_question_list'
+
+    def get_queryset(self):
+        return Question.objects.order_by('-pub_date')[:5]
+
+
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = 'polls/detail.html'
+
+
+class ResultView(generic.DetailView):
+    model = Question
+    template_name = 'polls/results.html'

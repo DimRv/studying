@@ -16,4 +16,16 @@ Choice.objects.filter(question__pub_date__year=current_year)
 c = q.choice_set.filter(choice_text__startswith="Just hacking")
 c.delete()
 
+from django.test.utils import setup_test_environment
+setup_test_environment()
+from django.test import Client
+client = Client()
+response = client.get("/")
+response.status_code
+from django.urls import reverse
+response = client.get(reverse("polls:index"))
+response.status_code
+response.content
+response.context["latest_question_list"]
+
 quit()
