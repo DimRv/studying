@@ -1,17 +1,20 @@
-'''Возвращает абсолютное значение объекта'''
+"""Возвращает абсолютное значение объекта, переданного в качестве аргумента.
+Обычно это int, float, complex, но может быть любой объект в котором реализован метод __abs__.
+Абсолютное число или модуль в математике это расстояние от начальной точки координат до заданной точки.
+Расстояние не может быть отрицательным.
+"""
 
 help(abs)
-print(abs(-4), abs(5))
+print(abs(-4), abs(-5.3), abs(-3 - 4j))
 
 
-class Abs:
-    def __init__(self, val):
-        self.num = val
+class Coordinate:
+    def __init__(self, x, y):
+        self.point = (x, y)
 
     def __abs__(self):
-        return abs(self.num)
+        return (self.point[0] ** 2 + self.point[1] ** 2) ** 0.5
 
 
-i_abs = Abs(-3)
-
-print(abs(i_abs))
+coord = Coordinate(-3, -4)
+print(abs(coord))
