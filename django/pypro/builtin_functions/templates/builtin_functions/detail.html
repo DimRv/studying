@@ -2,11 +2,15 @@
 <div class="flex-block">
 {% include "builtin_functions/functions_nav.html" %}
 <main>
-  <h1>Built-in function {{func_name}}</h1>
-  <h2>Syntax</h2>
+  <h1>Встроенная функция {{func_name}}</h1>
+  <h2>Синтаксис</h2>
   <div class="syntax">{{syntax}}</div>
-  <h2>Description</h2>
+  <h2>Описание</h2>
   {% for item in description %}
+  <p>{{ item }}</p>
+  {% endfor %}
+  <h2>Пример</h2>
+  {% for item in example %}
   <p>{{ item }}</p>
   {% endfor %}
 </main>
