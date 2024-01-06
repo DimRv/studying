@@ -1,0 +1,7 @@
+<nav class="column-nav">
+  <ul>
+    {% for item in func_list %}
+    <li><a href="{% url 'builtin_functions:detail' item%}">{{item}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,14 @@
+{% include "builtin_functions/common_top.html" %}
+<div class="flex-block">
+{% include "builtin_functions/functions_nav.html" %}
+<main>
+  <h1>Built-in function {{func_name}}</h1>
+  <h2>Syntax</h2>
+  <div class="syntax">{{syntax}}</div>
+  <h2>Description</h2>
+  {% for item in description %}
+  <p>{{ item }}</p>
+  {% endfor %}
+</main>
+</div>
+{% include "builtin_functions/common_footer.html" %}

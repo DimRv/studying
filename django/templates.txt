@@ -17,3 +17,6 @@
 {%url 'detail' question.id %}
 
 {% csrf_token %}
+
+{% extends "./base2.html" %}
+{% include "foo/bar.html" %}

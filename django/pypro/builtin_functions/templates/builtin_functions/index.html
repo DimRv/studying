@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'builtin_functions/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Built-in functions</title>
+</head>
+<body>
+  <main class="one-column">
+    <h1>Built-in functions</h1>
+      {% for item,value in f_list.items %}
+      <div class="f-letter">{{item|capfirst}}</div>
+      <ul class="f_list">
+          {% for val in value%}
+          <li><a href="{% url 'builtin_functions:detail' val %}">{{val}}</a></li>
+          {% endfor %}
+      </ul>
+      {% endfor %}
+  </main>
+</body>
+</html>
