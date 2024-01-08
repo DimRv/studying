@@ -10,9 +10,11 @@
   <p>{{ item }}</p>
   {% endfor %}
   <h2>Пример</h2>
-  {% for item in example %}
-  <p>{{ item }}</p>
-  {% endfor %}
+<pre class="example">
+{% for item in example %}<code>{{ item }}</code>{% endfor %}</pre>
+  <h2>Результат</h2>
+<pre class="example">
+{% for item in result %}<code>{{ item }}</code>{% endfor %}</pre>
 </main>
 </div>
 {% include "builtin_functions/common_footer.html" %}

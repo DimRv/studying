@@ -101,3 +101,14 @@ p {
     display: block;
     padding: 2px 5px;
 }
+
+.example {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    background: #eee;
+    min-width: 400px;
+}
+.example code {
+    display: block;
+}

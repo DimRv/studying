@@ -3,8 +3,6 @@ async anext(aiterator[, default])
 """
 import asyncio
 
-help(anext)
-
 
 class AsyncIter:
     def __init__(self):
@@ -17,7 +15,7 @@ class AsyncIter:
         if self.counter >= 5:
             raise StopAsyncIteration
         self.counter += 1
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.01)
         return self.counter
 
 

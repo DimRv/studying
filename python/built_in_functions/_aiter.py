@@ -4,10 +4,6 @@ aiter(async_iterable, /) который может быть далее испо�
 import asyncio
 
 
-help(aiter)
-help('async')
-
-
 class AsyncIter:
     def __init__(self):
         self.counter = 0
@@ -19,7 +15,7 @@ class AsyncIter:
         if self.counter >= 10:
             raise StopAsyncIteration
         self.counter += 1
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.01)
         return self.counter
 
 
