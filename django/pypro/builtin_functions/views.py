@@ -37,15 +37,19 @@ def index(request):
 
 def detail(request, func_name):
     """Отображение детальной информации о функции"""
+    # Путь к файлам с примерами и добавление в path
     path = 'C:\\studying\\python\\built_in_functions'
     sys.path.append(path)
+    # Получение отсортированного списка всех встроенных функций в Python
     func_list = [i for i in __builtins__ if i[0] in [chr(j) for j in range(97, 123)]]
     func_list.sort()
+    # Отсортировка запросов которые не относятся к функциям
     if func_name not in func_list:
         raise Http404
+    # Получение синтаксиса функции с помощью help
     with OutputInterceptor() as output:
         help(func_name)
-    with OutputInterceptor() as res:
+    """with OutputInterceptor() as res:
         i = importlib.import_module(f'_{func_name}')
     documentation = i.__doc__.strip().split('.')
     # Получение Кода примера:
@@ -53,7 +57,7 @@ def detail(request, func_name):
         comment = False
         example = []
         for line in file.readlines():
-            if line.find('"""') >= 0:
+            if line.find('COMMENTADD') >= 0:
                 if comment:
                     comment = False
                     continue
@@ -65,13 +69,13 @@ def detail(request, func_name):
                 if len(line.rstrip()) > 0:
                     example.append(line.rstrip())
                 else:
-                    example.append(" ")
+                    example.append(" ")"""
     context = {'func_name': func_name,
-               'syntax': output[2],
-               'description': documentation,
                'func_list': func_list,
-               'title': f"Встроенная функция {func_name}",
-               'example': example,
-               'result': res,
+               'syntax': output,
+               # 'description': documentation,
+               # 'title': f"Встроенная функция {func_name}",
+               # 'example': example,
+               # 'result': res,
                }
     return render(request, 'builtin_functions/detail.html', context)

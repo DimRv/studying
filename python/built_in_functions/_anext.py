@@ -1,5 +1,7 @@
-"""Возвращает следующее значение в асинхронном итераторе aiter()
-async anext(aiterator[, default])
+"""
+anext(aiterator[, default]) -> obj
+
+Возвращает следующее значение в асинхронном итераторе aiter()
 """
 import asyncio
 

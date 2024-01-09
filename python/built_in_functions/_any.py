@@ -1,5 +1,7 @@
-"""Возвращает True, если какой-нибудь объект вернет True для bool() в итерируемом объекте"""
+"""
+any(iterable)
 
+Возвращает True, если какой-нибудь объект вернет True для bool() в итерируемом объекте"""
 
-help(any)
-print(any(['', None, False, []]), any(['', None, False, [3]]))
+print(any(['', None, False, []]))
+print(any(['', None, False, [3]]))

@@ -1,4 +1,7 @@
-"""Благодарности"""
+"""
+credits() -> None
+
+Благодарности"""
 
 help(credits)
-credits()
+a = credits()

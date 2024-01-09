@@ -1,4 +1,7 @@
-"""Позволяет скомпилировать код для дальнейшего выполнения exec или eval
+"""
+compile(source, filename, mode)
+
+Позволяет скомпилировать код для дальнейшего выполнения exec или eval
 
 compile(source, filename, mode)
 source - модуль,  выражение или оператор

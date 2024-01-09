@@ -1,4 +1,6 @@
-"""Вывод информации о правах"""
+"""copyright() -> None
+Вывод информации о правообладателе"""
 
 help(copyright)
-copyright()
+a = copyright()
+type(a)
