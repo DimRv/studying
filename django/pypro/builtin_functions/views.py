@@ -47,8 +47,23 @@ def detail(request, func_name):
     if func_name not in func_list:
         raise Http404
     # Получение синтаксиса функции с помощью help
-    with OutputInterceptor() as output:
-        help(func_name)
+    """with OutputInterceptor() as output:
+        help(func_name)"""
+    with open(f'{path}\\_{func_name}.py', encoding='utf-8') as file:
+        doc = False
+        while True:
+            try:
+                line = file.readline()
+                if line == '"""\n':
+                    doc = True;
+
+
+
+
+
+
+
+        print(context)
     """with OutputInterceptor() as res:
         i = importlib.import_module(f'_{func_name}')
     documentation = i.__doc__.strip().split('.')
@@ -72,10 +87,10 @@ def detail(request, func_name):
                     example.append(" ")"""
     context = {'func_name': func_name,
                'func_list': func_list,
-               'syntax': output,
-               # 'description': documentation,
-               # 'title': f"Встроенная функция {func_name}",
-               # 'example': example,
+               'syntax': syntax,
+               'description': documentation,
+               'title': f"Встроенная функция {func_name}",
+               'example': example,
                # 'result': res,
                }
     return render(request, 'builtin_functions/detail.html', context)

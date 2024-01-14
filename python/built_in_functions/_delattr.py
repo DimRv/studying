@@ -1,6 +1,7 @@
-"""Удаляет атрибут у объекта
+"""
+delattr(odj, name)
 
-delattr(odj, str_attr)
+Удаляет атрибут у объекта
 """
 
 help(delattr)
