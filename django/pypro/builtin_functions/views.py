@@ -3,6 +3,7 @@ from django.http import Http404
 from io import StringIO
 import sys
 import importlib
+import inspect
 # Create your views here.
 
 
@@ -46,28 +47,49 @@ def detail(request, func_name):
     # Отсортировка запросов которые не относятся к функциям
     if func_name not in func_list:
         raise Http404
+
+    with open(path + f"/_{func_name}.py", encoding='utf-8') as file:
+        n = 0
+        comment = False
+        content = [[], [], []]
+        string = ''
+        for line in file:
+            code_line = line.rstrip()
+            if code_line == '"""':
+                if comment is True:
+                    comment = False
+                    n += 1
+                else:
+                    comment = True
+                continue
+            if comment:
+                if code_line == '':
+                    if n == 0:
+                        n += 1
+                        continue
+                    if n == 1:
+                        content[n].append(string)
+                        string = ''
+                else:
+                    string += code_line
+        print(content)
+
+
+
+
+
     # Получение синтаксиса функции с помощью help
     """with OutputInterceptor() as output:
         help(func_name)"""
-    with open(f'{path}\\_{func_name}.py', encoding='utf-8') as file:
-        doc = False
-        while True:
-            try:
-                line = file.readline()
-                if line == '"""\n':
-                    doc = True;
-
-
-
-
-
-
-
-        print(context)
+    # Получение данных из файла примера
     """with OutputInterceptor() as res:
-        i = importlib.import_module(f'_{func_name}')
-    documentation = i.__doc__.strip().split('.')
-    # Получение Кода примера:
+        # Импорт модуля, чтобы записать результат выполнения в res
+        mod = importlib.import_module(f'_{func_name}')
+        print(inspect.getsource(mod).removeprefix(mod.__doc__))"""
+    # Получение данных из загруженного модуля:
+    """doc_split = mod.__doc__.split('\n\n')
+    syntax = doc_split[0]
+    description = doc_split[1:]
     with open(path + f"/_{func_name}.py", encoding='utf-8') as file:
         comment = False
         example = []
@@ -87,10 +109,10 @@ def detail(request, func_name):
                     example.append(" ")"""
     context = {'func_name': func_name,
                'func_list': func_list,
-               'syntax': syntax,
-               'description': documentation,
-               'title': f"Встроенная функция {func_name}",
-               'example': example,
-               # 'result': res,
+               #'syntax': syntax,
+               #'description': description,
+               #'title': f"Встроенная функция {func_name}",
+               #'example': example,
+               #'result': res,
                }
     return render(request, 'builtin_functions/detail.html', context)
