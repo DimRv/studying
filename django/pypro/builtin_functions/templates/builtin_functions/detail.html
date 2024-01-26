@@ -4,7 +4,11 @@
 <main>
   <h1>Встроенная функция {{func_name}}</h1>
   <h2>Синтаксис</h2>
-  <div class="syntax">{{syntax}}</div>
+  <div class="syntax">
+    {% for item in syntax %}
+      <p>{{item}}</p>
+    {% endfor %}
+  </div>
   <h2>Описание</h2>
   {% for item in description %}
   <p>{{ item }}</p>

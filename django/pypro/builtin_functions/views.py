@@ -3,7 +3,6 @@ from django.http import Http404
 from io import StringIO
 import sys
 import importlib
-import inspect
 # Create your views here.
 
 
@@ -41,7 +40,7 @@ def detail(request, func_name):
     # Путь к файлам с примерами и добавление в path
     path = 'C:\\studying\\python\\built_in_functions'
     sys.path.append(path)
-    # Получение отсортированного списка всех встроенных функций в Python
+    # Получение отсортированного списка всех встроенных функций в Python для навигации
     func_list = [i for i in __builtins__ if i[0] in [chr(j) for j in range(97, 123)]]
     func_list.sort()
     # Отсортировка запросов которые не относятся к функциям
@@ -49,70 +48,64 @@ def detail(request, func_name):
         raise Http404
 
     with open(path + f"/_{func_name}.py", encoding='utf-8') as file:
-        n = 0
         comment = False
-        content = [[], [], []]
-        string = ''
+        pos = 'syntax'
+        description_string = ''
+        file_content = {
+            'syntax': [],
+            'description': [],
+            'example': [],
+        }
         for line in file:
-            code_line = line.rstrip()
-            if code_line == '"""':
-                if comment is True:
-                    comment = False
-                    n += 1
-                else:
+            code_str = line.rstrip()
+            if code_str == '"""':
+                if comment is False:
                     comment = True
-                continue
-            if comment:
-                if code_line == '':
-                    if n == 0:
-                        n += 1
-                        continue
-                    if n == 1:
-                        content[n].append(string)
-                        string = ''
-                else:
-                    string += code_line
-        print(content)
-
-
-
-
-
-    # Получение синтаксиса функции с помощью help
-    """with OutputInterceptor() as output:
-        help(func_name)"""
-    # Получение данных из файла примера
-    """with OutputInterceptor() as res:
-        # Импорт модуля, чтобы записать результат выполнения в res
-        mod = importlib.import_module(f'_{func_name}')
-        print(inspect.getsource(mod).removeprefix(mod.__doc__))"""
-    # Получение данных из загруженного модуля:
-    """doc_split = mod.__doc__.split('\n\n')
-    syntax = doc_split[0]
-    description = doc_split[1:]
-    with open(path + f"/_{func_name}.py", encoding='utf-8') as file:
-        comment = False
-        example = []
-        for line in file.readlines():
-            if line.find('COMMENTADD') >= 0:
-                if comment:
-                    comment = False
                     continue
                 else:
-                    comment = True
-            if comment:
-                continue
-            else:
-                if len(line.rstrip()) > 0:
-                    example.append(line.rstrip())
+                    comment = False
+                    file_content[pos].append(description_string)
+                    pos = 'example'
+                    continue
+            if pos == 'syntax':
+                if code_str == '':
+                    pos = 'description'
+                    continue
                 else:
-                    example.append(" ")"""
+                    file_content[pos].append(code_str)
+            if pos == 'description':
+                if code_str == '':
+                    file_content[pos].append(description_string)
+                    description_string = ''
+                    continue
+                else:
+                    description_string += code_str
+                    if description_string[-1] != '.':
+                        description_string += ' '
+            if pos == 'example':
+                if code_str == '':
+                    file_content[pos].append('\n')
+                else:
+                    file_content[pos].append(code_str)
+
+    # Получение результата выполнения
+    with OutputInterceptor() as res:
+        """Через exec плохо не работает с aiter:
+        with open(path + f"\_{func_name}.py") as file:
+            exec(file.read())"""
+        i = importlib.import_module(f"_{func_name}")
+
+    if not res:
+        with OutputInterceptor() as res:
+            importlib.reload(i)
+
+
     context = {'func_name': func_name,
+               'title': f"Встроенная функция {func_name}",
                'func_list': func_list,
-               #'syntax': syntax,
-               #'description': description,
-               #'title': f"Встроенная функция {func_name}",
-               #'example': example,
-               #'result': res,
+               'syntax': file_content['syntax'],
+               'description': file_content['description'],
+               'example': file_content['example'],
+               'result': res,
                }
     return render(request, 'builtin_functions/detail.html', context)
