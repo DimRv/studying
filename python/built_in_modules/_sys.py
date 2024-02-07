@@ -1,5 +1,6 @@
 import sys
 
 print('before exit')
-sys.exit() #выход из программы до
+print(sys.path)
+sys.exit()
 print('after exit')
