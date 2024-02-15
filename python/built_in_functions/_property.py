@@ -10,9 +10,6 @@ class Test:
     def __init__(self):
         self.x = 'start'
 
-    def get_x(self):
-        return self.x
-
 
 t = Test()
 print(t.x)
@@ -37,20 +34,20 @@ print(dir(Test2.x))
 
 class Test3:
     """Свойство защищено от удаления"""
-    __y = 'test'
 
     def __init__(self):
         self.n = 'start'
 
     @property
     def x(self):
-        return self.x
+        return self.n
 
     @x.setter
     def x(self, x):
-        self.x = x
+        self.n = x
 
 
 t3 = Test3()
-print(t3.__y)
+print(t3.x)
+t3.x("end")
 
