@@ -63,6 +63,7 @@ class Test3:
     @x.setter
     def x(self, x):
         self.n = x + ' set'
+        return self.n
 
 
 t3 = Test3()
@@ -71,4 +72,5 @@ t3.x = 'end'
 print(t3.x)
 t3.n = 'some'
 print(t3.x)
+t3.x("end")
 
