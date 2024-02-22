@@ -34,3 +34,6 @@ while n < 5:
     n += 1
 else:
     print('Блок else')
+
+while True:
+    print("Ctrl+C (Ctrl + F2) для выхода из бесконечного цикла")
