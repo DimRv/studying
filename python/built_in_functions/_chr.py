@@ -5,3 +5,6 @@ chr(i) -> str
 """
 print(chr(98))
 print(chr(1040))
+
+for i in range(256):
+    print(f'{i}: ', chr(i))
