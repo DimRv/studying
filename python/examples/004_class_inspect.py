@@ -156,7 +156,6 @@ if __name__ == '__main__':
 
     class Test(list, ListTree):
         pass
-
     t = Test()
     print(t)
 
