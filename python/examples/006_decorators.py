@@ -157,3 +157,29 @@ class T:
 
 a = T()
 b = T()
+
+print('Пример 5. Расчет времени выполнения функции.'.center(60, '='))
+
+import time
+
+
+class TimeDecor:
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        start = time.perf_counter()
+        result = self.func(*args, **kwargs)
+        run_time = time.perf_counter() - start
+        print(f"Функции {self.func} потребовалось {run_time} на выполнение")
+        return result
+
+@TimeDecor
+def get_list(n):
+    return [i*2 for i in range(n)]
+
+
+get_list(13000000)
+get_list(13000000)
+get_list(13000000)
+get_list(13000000)
