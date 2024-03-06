@@ -183,3 +183,168 @@ get_list(13000000)
 get_list(13000000)
 get_list(13000000)
 get_list(13000000)
+
+print('Пример 6. Приватные атрибуты класса.'.center(60, '='))
+
+
+def get_info(*args):
+    print([str(i) for i in args])
+
+
+def private_dec(*private_attr):
+    def decorate_class(Cls):
+        class OnInstance:
+            def __init__(self, *args, **kwargs):
+                self.obj = Cls(*args, **kwargs)
+
+            def __getattr__(self, item):
+                get_info("getattr", item)
+                if item in private_attr:
+                    raise AttributeError(f"It is Private attribute: {item}",)
+                else:
+                    return getattr(self.obj, item)
+
+            def __setattr__(self, key, value):
+                get_info("setattr", key, value)
+                if key == 'obj':
+                    self.__dict__[key] = value
+                elif key in private_attr:
+                    raise AttributeError(f"It is Private attribute: {key}",)
+                else:
+                    setattr(self.obj, key, value)
+
+        return OnInstance
+    return decorate_class
+
+
+@private_dec('data', 'data3', 'method')
+class MyClass:
+    data = 'data'
+    data2 = 'data2'
+    def __init__(self, bla):
+        self.data3 = 'data3'
+        self.data4 = 'data4'
+        self.bla = bla
+    def method(self):
+        print('method')
+
+
+m1 = MyClass('bla')
+
+try:
+    #print(m1.data)
+    m1.data = 'newdata1'
+except AttributeError:
+    print("NO ACCESS")
+try:
+    print(m1.data2)
+    m1.data2 = 'newdata2'
+except AttributeError:
+    print("NO ACCESS")
+try:
+    #print(m1.data3)
+    m1.data3 = 'newdata3'
+except AttributeError:
+    print("NO ACCESS")
+try:
+    print(m1.data4)
+    m1.data4 = 'newdata4'
+except AttributeError:
+    print("NO ACCESS")
+
+
+print('Пример 7. Приватные и Публичные атрибуты класса.'.center(60, '='))
+
+
+def access(testfunc):
+    def decorate_class(cls):
+        class Decor:
+            def __init__(self):
+                print('init')
+                self.obj = cls
+
+            def __getattr__(self, item):
+                print('getattr')
+                if testfunc(item):
+                    raise TypeError("getting private attr")
+                else:
+                    return getattr(self.obj, item)
+
+            def __setattr__(self, key, value):
+                print('setattr')
+                if key == 'obj':
+                    self.__dict__[key] = value
+                elif testfunc(key):
+                    raise TypeError("changing private attr")
+                else:
+                    setattr(self.obj, key, value)
+        return Decor
+    return decorate_class
+
+def private(attr):
+    return access(testfunc = (lambda i: i in attr))
+
+def public(attr):
+    return access(testfunc = (lambda i: i not in attr))
+
+
+@private('age')
+class T1:
+    """в этом классе только один приватный аттрибут - age, все остальные открытые"""
+    age = 'age'
+    data = 'data'
+
+@public('age')
+class T2:
+    """в этом классе только один публичный аттрибут - age, все остальные закрытые"""
+    age = 'age'
+    data = 'data'
+
+t1 = T1()
+t2 = T2()
+
+print(t1.data)
+print(t2.age)
+#print(t1.age)
+#print(t2.data)
+
+
+print('Пример 8. Проверка передаваемых аргументов.'.center(60, '='))
+
+
+def check_value(*argchecks):
+    def decorator(func):
+        def checker(*args):
+            for pos, mi, ma in argchecks:
+                if args[pos] < mi or args[pos] > ma:
+                    raise TypeError(f"Переданное значение {args[pos]} не входит в диапазон от {mi} до {ma}")
+            return func(*args)
+        return checker
+    return decorator
+
+
+@check_value((0, 1, 31), (1, 1, 12), (2, 1900, 2024))
+def create_date(d, m, y):
+    return f"{d}.{m}.{y}"
+
+
+try:
+    print(create_date(1, 12, 1987))
+    print(create_date(17, 12, 1987))
+    print(create_date(11, 13, 1987))
+except TypeError as er:
+    print(er)
+
+try:
+    print(create_date(22, 6, 1941))
+    print(create_date(1, 1, 1900))
+    print(create_date(32, 13, 1987))
+except TypeError as er:
+    print(er)
+try:
+    print(create_date(30, 10, 1899))
+except TypeError as er:
+    print(er)
+
+
+
