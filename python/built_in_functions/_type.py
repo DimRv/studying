@@ -1,6 +1,8 @@
 """
 type(object) - возвращает type объекта, переданного в параметре
-type(name, bases, dict, **kwds) - создает новый объект, аргументы становятся значениями __name__, __bases__, __dict__
+type(name, bases, dict, **kwds) - создает новый объект class, аргументы становятся значениями __name__, __bases__, __dict__
+
+Встроенная функция type и оператор class создают один и тот же объект type, вызов которого создает экземпляры.
 
 type один из методов интроспекции (способность исследования объектов внутри самого кода)
 """
@@ -21,6 +23,7 @@ d = {
 TestType = type('TestType', (object,), d)
 
 a = TestType()
+print(a)
 print(a.test, a.test2)
 
 
@@ -30,6 +33,7 @@ class TestType2:
 
 
 a2 = TestType2()
+print(a2)
 print(a2.test, a2.test2)
 
 new_var = type(a2)
