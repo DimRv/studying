@@ -8,6 +8,8 @@ d1 = {
     'surname': 'Rvantsov',
     'something': None
 }
+for i in d1:
+    print(i)
 
 print(d1, type(d1))
 print('name' in d1, 'Dmitriy' in d1)

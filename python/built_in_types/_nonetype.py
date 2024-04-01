@@ -9,6 +9,11 @@ None - ничего
     - в качестве возвращаемого значения в функциях, при отсутствии оператора return
 '''
 
+a = type(None)
+print(a)
+b = a()
+print(b)
+
 help(None)
 print("-" * 30)
 a1 = None

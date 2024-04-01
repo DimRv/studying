@@ -49,3 +49,7 @@ test.sort(key=lambda n: len(n))
 print(test)
 a = [1]
 #print(a[-5]) IndexError
+
+a = [[1], [2]]
+b = a[:]
+print(a, b)

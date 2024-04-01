@@ -2,6 +2,10 @@
 re - regular expressions
 получение совпадений по шаблону re
 
+re.findall - список из всех найденных совпадений
+re.match(re, text) -
+re.match.groups() - список из всех найденных совпадений
+
 """
 import re
 
