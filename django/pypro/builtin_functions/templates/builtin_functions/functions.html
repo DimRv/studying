@@ -1,14 +1,6 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{% static 'builtin_functions/style.css' %}">
-    <meta charset="UTF-8">
-    <title>Built-in functions</title>
-</head>
-<body>
-  <main class="one-column">
-    <h1>Built-in functions</h1>
+{% include "builtin_functions/extend_styles.html" %}
+<main class="one-column">
+    <h1>Встроенные Функции</h1>
       {% for item,value in f_list.items %}
       <div class="f-letter">{{item|capfirst}}</div>
       <ul class="f_list">
@@ -18,5 +10,4 @@
       </ul>
       {% endfor %}
   </main>
-</body>
-</html>
+{% include "base/basic_bottom.html" %}

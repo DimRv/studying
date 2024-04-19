@@ -19,4 +19,6 @@
 {% csrf_token %}
 
 {% extends "./base2.html" %}
+{% block blockname %} {% endblock %}
+
 {% include "foo/bar.html" %}

@@ -32,7 +32,7 @@ def index(request):
                 alphabetic_list = []
         else:
             alphabetic_list.append(i)
-    return render(request, 'builtin_functions/index.html', {'f_list': context})
+    return render(request, 'builtin_functions/functions.html', {'f_list': context})
 
 
 def detail(request, func_name):

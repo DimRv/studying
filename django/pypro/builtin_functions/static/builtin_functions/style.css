@@ -1,28 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-    color: #444;
-    font-family: "Courier", "Courier new", "Lucida Console", monospace;
-}
-a {
-    text-decoration: none;
-}
-
-
-body {
-    background:
-    linear-gradient(to top, rgba(250,0,0,.3), rgba(250,0,0,.3) 3%,rgba(255,255,255,.3) 4%, rgba(255,255,255,.3) 100%),
-    linear-gradient(to right, rgba(250,0,0,.3), rgba(250,0,0,.3) 3%,rgba(255,255,255,.3) 4%, rgba(255,255,255,.3) 100%);
-    background-size: 20px 20px;
-}
-
 .one-column {
     max-width: 1200px;
     margin: auto;
     background: white;
     min-height: 1000px;
     margin: 0 auto;
-    border: 1px solid #ddd;
+    border: 1px solid grey;
     border-top: none;
     border-bottom: none;
 }
