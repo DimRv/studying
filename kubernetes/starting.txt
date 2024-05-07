@@ -1,0 +1,29 @@
+Kubernetes - платформа с открытым исходным кодом для управления контейнезированными рабочими нагрузками и сервисами
+
+В традиционном исполнении: Сервер - OC - App - App - App
+Виртуализация: Сервер - ОС - Hypervizor - VM(OC - App - App - App) - VM(OC - App - App - App)
+Контейнеризация: - Сервер - ОС - ContainerRuntime - Container(App - App - App) - Container(App - App - App)
+
+Улез - физический носитель контейнера
+Кластер (Kubernets Cluster) - набор из машин (из узлов), которые запускают контейнезированные приложения
+Под (Pod) - компоненты приложения, поды располагаются на узлах
+Управляющий слой (Control Plane) - управление узлами и подами в кластере.
+
+Компоненты управляющего слоя
+
+
+Minikube запускает одноузловой кластер Kubernetes внутри виртуальной машины
+
+minikube start --driver=virtualbox --no-vtx-check
+minikube start --kubernetes-version 1.29.2 - запуск с указанием версии
+minikube stop
+minikube delete
+
+kubectl create deployment hello-minikube --image=registry.k8s.io/echoserver:1.10
+- создание развертывания (Deployment)
+kubectl expose deployment hello-minikube --type=NodePort --port=8080
+- создание сервиса (Service), для доступа к Deployment извне
+kubectl get pod - проверка, что под (Pod) hello-minikube запущен
+minikube service hello-minikube --url - URL открытого (exposed) сервиса
+kubectl delete services hello-minikube - удаление сервиса
+kubectl delete deployment hello-minikube - удаление развертывания
