@@ -4,9 +4,6 @@
     background: white;
     min-height: 1000px;
     margin: 0 auto;
-    border: 1px solid grey;
-    border-top: none;
-    border-bottom: none;
 }
 
 h1 {
@@ -55,33 +52,6 @@ p {
     background: #eee;
     margin: 20px;
     text-align: center;
-}
-.flex-block {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.flex-block main{
-    width: calc(100% - 200px);
-    background: #fff;
-    border-right: 1px solid grey;
-}
-
-.column-nav {
-    min-width: 200px;
-    background: #eee;
-    border: 1px solid grey;
-}
-
-.column-nav ul{
-    list-style: none;
-}
-.column-nav li:nth-child(odd) {
-    background: #fff;
-}
-.column-nav a{
-    display: block;
-    padding: 2px 5px;
 }
 
 .example {

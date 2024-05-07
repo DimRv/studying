@@ -1,0 +1,15 @@
+django
+CONN_MAX_AGE = 0 - по умолчанию
+CONN_MAX_AGE = None - постоянное подключение к БД
+
+
+settings.py - Подключение postgresql:
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "OPTIONS": {
+            "service": "my_service",
+            "passfile": ".my_pgpass",
+        },
+    }
+}

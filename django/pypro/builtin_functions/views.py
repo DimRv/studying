@@ -3,6 +3,7 @@ from django.http import Http404
 from io import StringIO
 import sys
 import importlib
+from . import scripts
 # Create your views here.
 
 
@@ -99,6 +100,7 @@ def detail(request, func_name):
         with OutputInterceptor() as res:
             importlib.reload(i)
 
+    print(file_content['syntax'])
 
     context = {'func_name': func_name,
                'title': f"Встроенная функция {func_name}",
@@ -109,3 +111,18 @@ def detail(request, func_name):
                'result': res,
                }
     return render(request, 'builtin_functions/detail.html', context)
+
+
+def detail_new(request, func_name):
+
+    func_list = [i for i in __builtins__ if i[0] in [chr(j) for j in range(97, 123)]]
+    func_list.sort()
+
+    context = {'func_name': func_name,
+               'title': f"Встроенная функция {func_name}",
+               'func_list': func_list,
+               'syntax': f"builtin_functions/{func_name}/syntax.html",
+               }
+    return render(request, 'builtin_functions/detail.html', context)
+
+

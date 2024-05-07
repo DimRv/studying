@@ -23,15 +23,14 @@ body {
 .page{
     max-width: 1200px;
     margin: auto;
-    background: rgba(255,255,255,.9);
+    background: white;
+    border: 1px solid grey;
 }
 
 
 .hat{
     background: #6495ED;
     line-height: 3rem;
-    border: 1px solid grey;
-    border-bottom: none;
 }
 .hat-leftblock{
     display: flex;
@@ -68,4 +67,55 @@ body {
     text-align: center;
     margin: 1rem;
 }
+.face-h2{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem;
+}
 
+.face-flexblock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.face-flexblock-block{
+    width: 250px;
+    border: 1px solid grey;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.face-flexblock-block:hover{
+    background: #ddd;
+}
+.face-flexblock-block a{
+    display: block;
+    padding: 1rem;
+}
+
+.flex-block {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-block main{
+    width: calc(100% - 200px);
+    background: #fff;
+}
+
+.column-nav {
+    min-width: 200px;
+    background: #eee;
+    border-right: 1px solid grey;
+}
+
+.column-nav ul{
+    list-style: none;
+}
+.column-nav li:nth-child(odd) {
+    background: #fff;
+}
+.column-nav a{
+    display: block;
+    padding: 2px 5px;
+}

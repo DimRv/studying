@@ -1,0 +1,20 @@
+{% include "builtin_functions/extend_styles.html" %}
+<div class="flex-block">
+{% include "builtin_functions/functions_nav.html" %}
+<main>
+  <h1>Встроенная функция {{func_name}}</h1>
+  <h2>Синтаксис</h2>
+  {% include syntax %}
+  <h2>Описание</h2>
+  {% for item in description %}
+  <p>{{ item }}</p>
+  {% endfor %}
+  <h2>Пример</h2>
+<pre class="example">
+{% for item in example %}<code>{{ item }}</code>{% endfor %}</pre>
+  <h2>Результат</h2>
+<pre class="example">
+{% for item in result %}<code>{{ item }}</code>{% endfor %}</pre>
+</main>
+</div>
+{% include "base/basic_bottom.html" %}
