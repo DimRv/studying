@@ -1,6 +1,0 @@
-git version - текущая версия программы
-git config --global user.name 'nick'
-git config --global user.email 'email'
-git config --list - вывод списка с указанными настройками
-cat ~/.gitconfig - файл с конфигом глобальных настроек
-

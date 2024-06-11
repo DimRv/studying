@@ -1,18 +1,47 @@
-git init - текущий каталог становится git-репозиторием
+git version - текущая версия программы
+git config --global user.name 'nick'
+git config --global user.email 'email'
+git config --list - вывод списка с указанными настройками
+git config [--global] merge.ff false - отключение fast forward
+cat ~/.gitconfig - файл с конфигом глобальных настроек
+
+git init - текущий каталог становится локальным git-репозиторием
 rm -rf .git - убрать текущий рабочий каталог как git-репозиторий
-git status - текущее состояние гит-репозитория
-git add -all - подготавливает к сохранению в git-репозиторий все файлы каталога
+git status - текущее состояние гит-репозитория, выводит инфо о состоянии файлов
+git add file/--all/. - делает файлы отслеживаемыми и подготавливает к комииту
 git commit -m 'комментарий коммита' - сохранение состояния текущих файлов добавленных через add
+git commit --amend --no-edit - исправление последнего commit (HEAD)
 git log - просмотр истории коммитов
 
 ssh-keygen -t ed25519 -c "почта привязки аккаунта GitHub" - генерация SSH-ключа
 ssh-keygen -t rsa -b 4096 -c "почта привязки аккаунта GitHub" - генерация SSH-ключа
 .pub ключ устанавливаем в профиле своего аккаунта GitHub
 ssh -T git@github.com - проверка доступа по SSH к GitHub
-git remote add origin git@github.com:%ИМЯ_АККАУНТА%/ИМЯ_ПРОЕКТА.git - связывает текущую директорию с GITHUB
+
+git remote add origin git@github.com:%ИМЯ_АККАУНТА%/ИМЯ_ПРОЕКТА.git - связывает текущую директорию с GITHUB репозиторией
+git remote rm origin - удаление текущего привязанного origin
 git remote -v - проверка связи с github
 
-git push -u origin master - отправка изменений на удаленный репозиторий origin репозиторий master
+git push - отправка изменений на удаленный репозиторий
+git push -u origin feature/merge-request - отправка изменений и связать локальную ветку с удаленной
+git push my-branch - отправка изменений в ветку (должна быть на удаленном репозитории)
+git restore --staged example.txt - убрать файл из staged (случайно добавили через add)
+git restore <file> - откатить изменения файла ни staged ни в commit
+git reset --hard commit-hash - откат на состояние commit-hash
+git pull - забрать изменения из удаленного репозитория
 
+git diff - показ изменений в modified-файлах
+git diff --staged - изменения в staged-файлах (после git add)
+git diff hashA HEAD - выводит изменения в файлах
 
+git clone URL - создание копии удаленного репозитория на своем ПК
+fork - копирование чужого публичного репозитория в свой аккаунт gitHub (на WEB-ресурсе)
 
+git branch - просмотр веток
+git branch -a - просмотр всех веток в том числе и удаленных
+git branch feature/add-branch - создание новой ветки
+git branch -d branch_name - удаление ветки
+git checkout branch_name - переключиться на ветку branch_name
+git checkout -b branch_name - создать и переключиться на ветку
+git merge branch_name - обеъединение веток (выполняется из той ветки, куда нужно добавить изменения)
+git merge --no-ff branch_name - объединение веток, без перемотки к последнему коммиту
