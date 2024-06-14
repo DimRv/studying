@@ -1,4 +1,5 @@
-git version - текущая версия программы
+git --help - справка
+git --version - текущая версия программы
 git config --global user.name 'nick'
 git config --global user.email 'email'
 git config --list - вывод списка с указанными настройками
@@ -22,8 +23,8 @@ git remote add origin git@github.com:%ИМЯ_АККАУНТА%/ИМЯ_ПРОЕК
 git remote rm origin - удаление текущего привязанного origin
 git remote -v - проверка связи с github
 
-git push - отправка изменений на удаленный репозиторий
 git push -u origin feature/merge-request - отправка изменений и связать локальную ветку с удаленной
+git push - отправка изменений на связанный удаленный репозиторий
 git push my-branch - отправка изменений в ветку (должна быть на удаленном репозитории)
 git restore --staged example.txt - убрать файл из staged (случайно добавили через add)
 git restore <file> - откатить изменения файла ни staged ни в commit
@@ -41,7 +42,12 @@ git branch - просмотр веток
 git branch -a - просмотр всех веток в том числе и удаленных
 git branch feature/add-branch - создание новой ветки
 git branch -d branch_name - удаление ветки
+git branch -m branch - modify изменение ветки
 git checkout branch_name - переключиться на ветку branch_name
+git checkout commit_hash - вернуться к коммиту
 git checkout -b branch_name - создать и переключиться на ветку
-git merge branch_name - обеъединение веток (выполняется из той ветки, куда нужно добавить изменения)
+git merge branch_name - объединение веток (выполняется из той ветки, куда нужно добавить изменения)
 git merge --no-ff branch_name - объединение веток, без перемотки к последнему коммиту
+
+git cat-file -t hash_object - вывод типа git-объекта
+git cat-file -p hash_object - вывод содержимого git-объекта

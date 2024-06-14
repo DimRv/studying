@@ -1,7 +1,8 @@
 untracked - еще не отслеживаемый файл (файл только создан)
-staged (indexed или cashed) - подготовленный к коммиту (после git add)
 tracked - отслеживаемый (после commit)
+staged (indexed или cashed) - подготовленный к коммиту (после git add)
 modified - измененный файл
+deleted - удаленный файл
 
 
 зеленая секция - секция последнего git add
