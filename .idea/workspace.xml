@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7724be0-f4e1-4bf1-b448-9aed3cba3823" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/studying.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studying.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django/intro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/django/intro.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django/pypro/base/static/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/django/pypro/base/static/base/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes/starting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/starting.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/_base_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_base_commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/_bash.commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_bash.commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/_files_and_dir.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_files_and_dir.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/_process.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_process.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/_users_and_groups.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_users_and_groups.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task13.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task13.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task14.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task14.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task20.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task20.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task21.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task21.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task26.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task26.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task27.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task27.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task28.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task28.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task35.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task35.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task9.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/built_in_modules/_re.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/built_in_modules/_re.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/examples/003_game_points" beforeDir="false" afterPath="$PROJECT_DIR$/python/examples/003_game_points" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/examples/008_collatz.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/examples/008_collatz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/built_in_modules/_os.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/built_in_modules/_os.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/built_in_modules/_shelve.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/built_in_modules/_shelve.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +60,9 @@
     "Python.009_tree_old.executor": "Run",
     "Python.1_two_sum.executor": "Run",
     "Python.2_add_two_numbers.executor": "Run",
+    "Python._os.executor": "Run",
     "Python._re.executor": "Run",
+    "Python._shelve.executor": "Run",
     "Python.base.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -96,73 +77,7 @@
       <recent name="C:\studying\django\pypro\base" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.006_.py">
-    <configuration name="004_class_inspect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="studying" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/examples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/004_class_inspect.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="005_encodings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="studying" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/examples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/005_encodings.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="008_collatz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="studying" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/examples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/008_collatz.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python._pprint">
     <configuration name="009_tree_of_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="studying" />
       <option name="ENV_FILES" value="" />
@@ -177,6 +92,72 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/009_tree_of_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_os" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="studying" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/built_in_modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/built_in_modules/_os.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_pprint" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="studying" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/built_in_modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/built_in_modules/_pprint.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_shelve" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="studying" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/built_in_modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/built_in_modules/_shelve.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._pprint" />
+        <item itemvalue="Python._shelve" />
+        <item itemvalue="Python._os" />
         <item itemvalue="Python tests.pytest in 006_decorators.py" />
         <item itemvalue="Python.009_tree_of_data" />
-        <item itemvalue="Python.008_collatz" />
-        <item itemvalue="Python.005_encodings" />
-        <item itemvalue="Python.004_class_inspect" />
       </list>
     </recent_temporary>
   </component>
