@@ -1,0 +1,72 @@
+apt install net-tools для ifconfig, route... (устарело, используем ip)
+apt install openssh-server
+
+lspci | grep -i ethernet - инфо о сетевой карте
+
+ip 
+ip a add 192.168.0.1/255.255.255.0 dev eth0
+ip a del 192.168.0.200/24 dev eth0
+ip link set dev eth0 down
+ip link set dev eth0 up
+ip n show - ARP-кэш
+ip r - таблица маршрутизации
+ip route add 192.168.10.0/24 via 192.168.1.2
+ip route del 192.168.10.0/24 dev eth0
+ip route del default - удаление шлюза по умолчанию
+ip route add default via 192.168.1.50 
+
+
+Внесение записей в ARP-кэш:
+ip neigh add 192.168.1.5 lladdr 00:1a:30:38:a8:00 dev eth0 nud perm
+in neigh del 192.168.1.5 dev eth1
+ip neigh chg 192.168.1.100 dev eth1 nud reachable
+ip -s -s n f 192.168.1.5 - сброс
+ip -s -s n flush 192.168.1.5 - сброс
+
+
+ifconfig - информация и настройка сети
+ifconfig enp0s3 10.0.2.12 netmask 255.255.255.0 - добавить ip
+ifconfig enp0s3 hw ether 00:01:02:03:05:06 - смена MAC
+ifconfig enp0s3 down
+ifconfig enp0s3 up
+
+route - статическая маршрутизация
+route add -net 10.10.20.0 netmask 255.255.255.0 gw 10.10.10.5
+route add --host 10.10.30.5 dev eth3
+netstat -nr - таблица маршрутизации
+
+hostname - текущее имя	
+hostnamectl set-hostname name - изменение имени
+
+Для постоанных ip настроек /etc/network/interfaces
+Для настройки DNS /etc/resolv.conf
+Смена имени /etc/hostname
+
+
+Пример 
+source /etc/network/interfaces.d/*
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.1.35
+gateway 192.168.1.1
+netmask 255.255.255.0
+dns-nameservers 192.168.1.1 77.88.8.1 8.8.8.8 1.1.1.1
+post-up route add -net 10.0.0.0 netmask 255.255.255.0 gw 192.168.1.50
+post-up route add -net 10.1.0.0 netmask 255.255.255.0 gw 192.168.1.60
+pre-down route del -net 10.0.0.0 netmask 255.255.255.0 gw 192.168.1.50
+pre-down route del -net 10.1.0.0 netmask 255.255.255.0 gw 192.168.1.60
+
+auto eth0:1
+iface eth0:1 inet static
+address 192.168.1.36
+netmask 255.255.255.0
+
+service networking restart - перезапуск сети
+/etc/init.d/networking restart
+
+apt install vlan
+lsmod | grep 8021q

@@ -1,0 +1,26 @@
+for event in pg.event.get(): - получение списка событий из очереди событий, каждый кадр события обновляются
+for event in pg.event.pump():
+
+
+event.type == pg.QUIT - нажатие на "закрыть" в окне
+event.type == pg.KEYDOWN - Нажатие клавиш
+event.type == pg.KEYUP - Нажатие клавиш
+event.type == pg.MOUSEBUTTONDOWN
+event.type == pg.MOUSEBUTTONUP
+event.type == pg.MOUSEMOTION
+KEYDOWN.key - имя клавиши
+KEYDOWN.mod - клавиши модификаторы Ctrl, Shift
+MOUSEBUTTONDOWN.button = 1, 2, 3, 4, 5
+event.pos - координаты мыши
+event.rel
+
+pg.key - модуль для работы с клавиатурой
+pressed = pg.key.get_pressed() - отслеживание нажатий клавиш
+if pressed[pg.K_SPACE]:
+
+
+pg.mouse - для работы с мышью
+pos = pg.mouse.get_pos()
+pressed = pg.mouse.get_pressed()
+pygame.mouse.set_visible(False) - скрыть курсор
+pygame.mouse.get_focused() - находится ли курсор в окне

@@ -1,0 +1,20 @@
+pg.sprite.Sprite - наследуется классом
+pg.sprite.Group - помещаются спрайты
+pg.sprite.spritecollideany(Sprite, Group)
+
+В классе должно быть реализовано:
+- класс наследуется от pg.sprite.Sprite
+- конструктор класса должен вызывать конструктор pg.sprite.Sprite
+- иметь метод update()
+- иметь свойство self.image содержащий Surface
+- иметь свойство self.rect содержащий Rect
+
+sp = pg.sprite.Sprite()
+sp.add(group)
+sp.remove(group)
+sp.kill() - удаление из всех групп
+
+
+gr = pg.sprite.Group()
+gr.add(Sprite)
+gr.draw(surf)

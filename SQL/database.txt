@@ -1,0 +1,27 @@
+CREATE DATABASE testDB
+DROP DATABASE testDB
+BACKUP DATABASE testDB TO DISK path [WITH DIFFERENTIAL]
+CREATE TABLE table_name (col_name datatype, col_name2N datatypeN)
+DROP TABLE table_name
+ALTER TABLE table_name ADD col_name datatype
+ALTER TABLE table_name DROP col_name
+ALTER TABLE table_name RENAME COLUMN col_name TO new_col_name
+ALTER TABLE table_name ALTER COLUMN col_name datatype
+
+col_constraints (CONSTRAINT):
+NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT, AUTO_INCREMENT
+
+INSERT INTO table_name (col1, col2, colN) VALUES (val1, val2, valN)
+INSERT INTO table_name SELECT col1, colN FROM other_table
+SELECT col1, colN INTO table_name FROM other_table
+UPDATE table_name SET col1 = val1, colN = valN WHERE
+
+SELECT col1, colN, agr_func1, agr_func2
+FROM table_name
+INNER JOIN table2_name ON table.col = table2.col
+WHERE col_conditions
+GROUP BY col1, colN
+ORDER BY colN ASC/DESC
+HAVING arg_conditions
+LIMIT num
+OFFSET num

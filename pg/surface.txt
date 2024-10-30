@@ -1,0 +1,52 @@
+pg.display.set_mode((0,0), pg.FULLSCREEN) - основной Surface
+pg.display.set_caption('text') - заголовок в оконном режиме
+pg.display.update() - попиксельная прорисовка основного Surface
+pg.display.update(rect) - попиксельная прорисовка области rect
+pg.display.update(rect_list)
+gp.display.flip() - отображение изменений на основном Surface, быстрее display.update при pg.FULLSCREEN
+
+
+surf = pg.Surface(size)
+surf = pg.Surface(size, pg.SRCALPHA) - прозрачность
+surf.convert_alpha() - для ускорения загрузки изображений на основной Surface
+surf.set_colorkey(color)
+surf.fill(color) - заполнить фон
+surf.get_width()
+surf.get_height()
+surf.get_size()
+surf.blit(surf, pos)
+surf.set_alpha()
+surf.get_rect()
+surf.get_rect(x,y) - с начальной позицией
+surf.set_colorkey(color) - указанный цвет станет прозрачным
+
+
+rect = gp.Rect((x, y, w, h)) - возвзращает экземпляр прямоугольника
+rect.width - ширина объекта
+rect.bottomright - вернет координаты нижней правой точки
+reсt.topleft
+rect.move_ip(x, y) - перемещает текущий rect
+rect.move(x, y) - создает новый rect путем перемещения
+rect.union_ip(rect2)
+rect.collidepoint(cord)
+rect.contains(rect2)
+
+
+tr = pygame.transform - изменение поверхностей, возвращают новые
+tr.flip(surf, True, False) - переворачивание surf
+tr.scale(surf, (w, h))
+tr.rotate(surf, deg)
+
+
+pg.image.load("path.bmp").convert() - surf по изображению
+pg.image.load("path.png").convert_alfa()
+pg.image.save(surf, 'path.png')
+canonicalized_path = path.replace('/', os.sep).replace('', os.sep)
+
+
+pg.font.get_fonts()
+font = pg.font.SysFont('name.ttf', size)
+font = pg.font.Font('name', size)
+font = pg.font.Font(None, size) - Шрифт по умолчанию
+path = pygame.font.match_font("verdana")
+font = pg.font.Font('name', size)

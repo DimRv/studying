@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7724be0-f4e1-4bf1-b448-9aed3cba3823" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/studying.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studying.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/git/commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/files_status.txt" beforeDir="false" afterPath="$PROJECT_DIR$/git/files_status.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django/intro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/django/intro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django/pypro/base/static/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/django/pypro/base/static/base/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/starting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/starting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/_base_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_base_commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/_bash.commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_bash.commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/_files_and_dir.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_files_and_dir.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/_process.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_process.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/_users_and_groups.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux/_users_and_groups.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task13.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task14.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task14.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task20.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task20.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task21.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task21.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task26.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task26.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task27.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task27.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task28.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task28.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task35.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task35.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/10_easy_algoritm_tasks_from_leetcode/_task9.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_letcode/10_easy_algoritm_tasks_from_leetcode/_task9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/built_in_modules/_re.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/built_in_modules/_re.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/examples/003_game_points" beforeDir="false" afterPath="$PROJECT_DIR$/python/examples/003_game_points" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/examples/008_collatz.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/examples/008_collatz.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -31,6 +52,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2bReRP7LZfFDtVZbzcalWn7orN4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -42,84 +66,40 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python tests.006_.py.executor": "Run",
+    "Python tests.pytest in 006_decorators.py.executor": "Run",
+    "Python.001_salary.executor": "Run",
+    "Python.002_name.executor": "Run",
+    "Python.003_game.executor": "Run",
+    "Python.004_class_inspect.executor": "Run",
+    "Python.005_encodings.executor": "Run",
+    "Python.008_collatz.executor": "Run",
+    "Python.009_.executor": "Run",
+    "Python.009_tree.executor": "Run",
+    "Python.009_tree2.executor": "Run",
+    "Python.009_tree_of_data.executor": "Run",
+    "Python.009_tree_old.executor": "Run",
+    "Python.1_two_sum.executor": "Run",
+    "Python.2_add_two_numbers.executor": "Run",
+    "Python._re.executor": "Run",
+    "Python.base.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/pygame",
-    "settings.editor.selected.configurable": "terminal"
+    "last_opened_file_path": "C:/studying/python/examples",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\studying\python\examples" />
       <recent name="C:\studying\django\pypro\builtin_functions\templates\builtin_functions" />
       <recent name="C:\studying\django\pypro\base" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.scripts">
-    <configuration name="_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.006_.py">
+    <configuration name="004_class_inspect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="studying" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/built_in_types" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/built_in_types/_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="_object" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="studying" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/built_in_types" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/built_in_types/_object.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scripts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="studying" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/django/pypro/builtin_functions" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/django/pypro/builtin_functions/scripts.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="studying" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -130,7 +110,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/004_class_inspect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,14 +119,123 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="005_encodings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="studying" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/005_encodings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="008_collatz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="studying" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/008_collatz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="009_tree_of_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="studying" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/009_tree_of_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="006_.py" type="tests" factoryName="py.test">
+      <module name="studying" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (studying)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/examples" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/python/examples/006_.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in 006_decorators.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="studying" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/python/examples/006_decorators.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scripts" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python._list" />
-        <item itemvalue="Python._object" />
+        <item itemvalue="Python tests.pytest in 006_decorators.py" />
+        <item itemvalue="Python.009_tree_of_data" />
+        <item itemvalue="Python.008_collatz" />
+        <item itemvalue="Python.005_encodings" />
+        <item itemvalue="Python.004_class_inspect" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

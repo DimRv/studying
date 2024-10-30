@@ -1,0 +1,12 @@
+DATE_TRUNC('временной отрезок', поле)
+'временной отрезок' = ('microseconds', 'milliseconds', 'second', 'minute',
+'hour', 'day', 'week', 'month', 'quarter', 'year', 'decade', 'century')
+EXTRACT(временной отрезок FROM поле)
+временной отрезок = CENTURY, YEAR, QUARTER, MONTH, WEEK, DAY, DOY, DOW, ISDOW, HOUR, MINUTE, SECOND, MILLISECOND
+SUM(поле)
+AVG(поле)
+MIN(поле)
+MAX(поле)
+COUNT(поле)
+DISTINCT(поле)
+

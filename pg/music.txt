@@ -1,0 +1,13 @@
+pg.mixer - для звуковых эффектов
+pg.mixer.music - для фоновой музыки
+
+pg.mixer.music.load("path") - загрузка потока (не грузит файл целиком)
+pg.mixer.music.queue("Path") - поставка в очередь
+pg.mixer.music.play(loops)
+pg.mixer.set_volum(0..1)
+pg.mixer.music.pause()
+pg.mixer.music.unpause()
+pg.mixer.music.stop()
+
+effect = pg.mixer.Sound("path")
+effect.play()

@@ -1,0 +1,12 @@
+Все функции модуля draw возвращают Экземпляры Rect
+
+pg.draw.rect(surf, color, (x1,y1,x2,y2)) - сплошной прямоугольник
+pg.draw.rect(surf, color, (x1,y1,x2,y2), border_size) - рамка вокруг прямоугольника
+pg.draw.ellipse(surf, color, (x1,y1,x2,y2), border_size)
+pg.draw.arc(surf, color, (x1, y1, x2, y2), angle1, angle2, width)
+pg.draw.circle(surf, color, (x, y), r)
+pg.draw.polygon(surf, color, points_list)
+pg.draw.line(surf, color, (x1, y1), (x2, y2), width)
+pg.draw.aaline(surf, color, (x1, y1), (x2, y2), width)
+pd.draw.lines(surf, color, True, points_list, width)
+

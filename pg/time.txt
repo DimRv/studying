@@ -1,0 +1,7 @@
+clock = pg.time.Clock()
+clock.tick() - один тик
+clock.tick(60) - уменьшение числа кадров до 60 кадров в сек (задержка сама вычисляется)
+
+pg.time.delay(ms) - (1000ms = 1s) - создает задержку
+pg.time.wait(ms) - ожидание ms
+pg.time.set_timer(pg.USEREVENT, 3000)

@@ -1,0 +1,49 @@
+--it is comment
+
+
+CREATE ROLE admin WITH
+	LOGIN
+	SUPERUSER
+	CREATEDB
+	CREATEROLE
+	INHERIT
+	REPLICATION
+	CONNECTION LIMIT -1
+	PASSWORD 'xxxxxx';
+COMMENT ON ROLE admin IS 'test';
+
+
+CREATE DATABASE "newDB"
+    WITH
+    OWNER = admin
+    ENCODING = 'UTF8'
+    LOCALE_PROVIDER = 'libc'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+COMMENT ON DATABASE "newDB"
+    IS 'testing';
+	
+	
+CREATE TABLE weather (
+    city            varchar(80),
+    temp_lo         int,           -- минимальная температура дня
+    temp_hi         int,           -- максимальная температура дня
+    prcp            real,          -- уровень осадков
+    date            date
+);
+
+
+CREATE TABLE cities (
+    name            varchar(80),
+    location        point			-- тип данных POSTGRESQL
+);
+
+DROP TABLE cities ;
+
+INSERT INTO weather VALUES ('San Francisco', 46, 50, 0.25, '1994-11-27');
+INSERT INTO weather (city, temp_lo, temp_hi, prcp, date)
+    VALUES ('San Francisco', 43, 57, 0.0, '1994-11-29');
+INSERT INTO cities VALUES ('San Francisco', '(-194.0, 53.0)');
+
+COPY weather FROM 'C:/temp/weather.txt';
