@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7724be0-f4e1-4bf1-b448-9aed3cba3823" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/built_in_modules/_os.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/built_in_modules/_os.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/built_in_modules/_shelve.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/built_in_modules/_shelve.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +56,11 @@
     "Python.009_tree2.executor": "Run",
     "Python.009_tree_of_data.executor": "Run",
     "Python.009_tree_old.executor": "Run",
+    "Python.010_quiz.executor": "Run",
     "Python.1_two_sum.executor": "Run",
     "Python.2_add_two_numbers.executor": "Run",
     "Python._os.executor": "Run",
+    "Python._pprint.executor": "Run",
     "Python._re.executor": "Run",
     "Python._shelve.executor": "Run",
     "Python.base.executor": "Run",
@@ -77,8 +77,8 @@
       <recent name="C:\studying\django\pypro\base" />
     </key>
   </component>
-  <component name="RunManager" selected="Python._pprint">
-    <configuration name="009_tree_of_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.010_quiz">
+    <configuration name="010_quiz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="studying" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,7 +91,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/009_tree_of_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/examples/010_quiz.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.010_quiz" />
         <item itemvalue="Python._pprint" />
         <item itemvalue="Python._shelve" />
         <item itemvalue="Python._os" />
         <item itemvalue="Python tests.pytest in 006_decorators.py" />
-        <item itemvalue="Python.009_tree_of_data" />
       </list>
     </recent_temporary>
   </component>
