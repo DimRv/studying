@@ -1,4 +1,4 @@
-"""Создание опросника на знание"""
+"""Создание опросника"""
 
 
 import random
@@ -40,6 +40,8 @@ def quiz(data: dict, question):
 
 
 if __name__ == "__main__":
+
+    print("опрос на знание названий цветов".upper().center(120))
     english_colors = {
         "white": "белый",
         "black": "черный",

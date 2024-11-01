@@ -3,6 +3,9 @@ import os
 os.sep - отображает сепаратор текущей OS (разделение папок в пути)
 os.listdir() - список, содержимое директории
 os.makedirs() - создание папок
+os.unlink(path) - удаление файла по указанному пути
+os.rmdir(path) - удаление папки по указанному пути
+os.walk(path) - обход древа каталогов (имя папки, список папок, список файлов)
 
 os.path.join(*dir_names:str) - создает путь в зависимости от OS
 os.path.abspath(path) - строка абсолютного пути аргумента
@@ -32,3 +35,6 @@ if __name__ == "__main__":
     #os.mkdir(r'C:\blablabla')
     print(os.path.join("one", 'two', "three"))
     print(os.path.getsize(r"C:\Windows\System32\cmd.exe"))
+    print(os.walk('dir_for_tests'))
+    for folder, subfolder, filename in os.walk('dir_for_tests'):
+        print(folder, subfolder, filename)
