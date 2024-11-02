@@ -3,7 +3,7 @@
 res = requests.get() - запрос содержимого WEB-страницы
 res.status_code == requests.codes.ok
 res.raise_for_status() - исключение если во время загрузки файла произошла ошибка
-res.text - содержимое WEB-страницы, можно обработать с помощью BeautifulSoup()
+res.text - содержимое WEB-страницы (можно обработать с помощью BeautifulSoup())
 data = res.iter_content(100000) - получение данных по 100000 байт
 
 обработать

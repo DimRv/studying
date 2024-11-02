@@ -1,3 +1,14 @@
 python -m ensurepip --upgrade
 python -m pip install --upgrade setuptools
 python -m pip install <module>
+
+
+<modules>:
+PyPDF2      - работа с .pdf-файлами
+BS2         - работа с .html-файлами
+openpyxl    - работа с .xlsx-файлами
+python-docx - работа с .docx-файлами
+django      - создание WEB-сайтов
+pygame      - создание простых игр
+
+
