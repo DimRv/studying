@@ -8,7 +8,7 @@
 4. in settings.py ->
     - builtin_functions.apps.BuiltinFunctionsConfig',
     - TIME_ZONE = 'Europe/Moscow'
-    - LANGUAGE_CODE = 'RU'
+    - LANGUAGE_CODE = 'ru-RU'
 5. creating templates/startapp_name/index.html
 6. creating builtin_functions/urls.py ->
     - from . import views
