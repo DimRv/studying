@@ -56,4 +56,35 @@ if __name__ == "__main__":
         "maroon": "бордовый",
     }
 
-    quiz(english_colors, "Как переводится слово: ")
+    english_animals = {
+        "cat": "кошка",
+        "dog": "собака",
+        "rat": "крыса",
+        "bat": "летучая мышь",
+        "monkey": "обезьяна",
+        "crocodile": 'крокодил',
+        "elephant": "слон",
+        "mouse": "мышь",
+        "snake": "змея",
+        "horse": "лошадь",
+        "pig": "свинья",
+        "frog": "лягушка",
+        "bird": "птица",
+        "squirrel": "белка",
+        "wolf": "волк",
+        "fox": "лиса",
+        "bear": "медведь",
+        "deer": "олень",
+        "elk": "лось",
+        "lion": "лев",
+        "tiger": "тигр",
+        "Rhinoceros": 'носорог',
+        "giraffe": 'жираф',
+        "cow": 'корова',
+        "sheep": "овца",
+        "chicken": "курица",
+        "rooster": "петух",
+    }
+
+    # quiz(english_colors, "Как переводится слово: ")
+    quiz(english_animals, "Как переводится слово: ")
