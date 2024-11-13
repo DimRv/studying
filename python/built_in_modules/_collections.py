@@ -1,6 +1,6 @@
 """
 collections.deque(iter) - коллекция данных как linked List
-
+collections.Counter(iter) - счетчик кол-ва значений
 
 """
 
@@ -16,4 +16,6 @@ print(d2)
 d1.append("d")
 d1.appendleft("_")
 print(d1)
+c = collections.Counter(['a', 'b', "c", "a", "a", "b"])
+print(type(c), c)
 
