@@ -8,3 +8,4 @@ dir(obj) - вернет отсортированный список параме
 help(dir)
 print(dir())
 print(dir(dir))
+
