@@ -1,15 +1,16 @@
 """Пример средств инспекции содержимого объектов"""
 
 
-def class_tree(cls, indent = 1):
+def class_tree(cls, indent=1):
     print('.' * indent + cls.__name__)
     for supercls in cls.__bases__:
-        class_tree(supercls, indent+4)
+        class_tree(supercls, indent + 4)
 
 
 def instance_tree(inst):
     print(f"Tree of {inst}")
     class_tree(inst.__class__, 3)
+
 
 
 class InstanceInfo:
@@ -21,7 +22,7 @@ class InstanceInfo:
         return result
 
     def __str__(self):
-        return f"<Instance of {self.__class__.__name__}, id:{id(self)}>\n" \
+        return f"<Instance of {self.__class__.__name__}, id: {id(self)}>\n" \
                f"{self.__attr_info()}"
 
 
@@ -74,12 +75,10 @@ class ListTree:
                f'{attr_info}\n{cls_info}\n'
 
 
-
-
-
-
 if __name__ == '__main__':
     print("classTree".center(100, '-'))
+
+
     class A:
         pass
 
