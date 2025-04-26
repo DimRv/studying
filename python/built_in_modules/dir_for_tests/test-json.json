@@ -1,0 +1,19 @@
+{
+    "name": "Tima",
+    "isCat": true,
+    "mouseCaught": {
+        "mouse": 0,
+        "rats": 0
+    },
+    "IQLevel": null,
+    "added_data": {
+        "name": "Boris",
+        "isCat": true,
+        "mouseCaught": 1,
+        "IQLevel": null,
+        "hate_cats": [
+            "Markiz",
+            "Murzik"
+        ]
+    }
+}

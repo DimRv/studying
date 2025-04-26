@@ -1,5 +1,8 @@
 """
 import os
+os.name - имя операционной системы
+os.uname - инфо об ОС (Linux)
+os.environ - переменные окружения, можно менять
 os.sep - отображает сепаратор текущей OS (разделение папок в пути)
 os.listdir() - список, содержимое директории
 os.makedirs() - создание папок
@@ -22,8 +25,10 @@ os.path.getsize(path) - размер файла
 
 if __name__ == "__main__":
     import os
-
     print([item for item in dir(os) if not item.startswith("_")])
+    print(os.name)
+    print(os.environ)
+    print(os.uname())
     print(os.sep, os.path.sep)
     print(os.getcwd())
     print(os.listdir("C:\\"))

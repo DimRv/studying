@@ -98,5 +98,7 @@ print("red;house;blue".partition(';'))
 print("red;house;blue".rpartition(';'))
 print('Hi\nmy\nfriend!'.splitlines())
 
+print('Hello'.split('!'))
+
 
 
