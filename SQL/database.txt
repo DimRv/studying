@@ -1,3 +1,15 @@
+SELECT - выбор данных
+WHERE - условия (AND OR ! XOR)
+UPDATE - обновление табл
+INSERT - добавление новой записи
+DELETE - удаление записи
+LIKE - поиск в соответствии с шаблоном
+DISTINCT - получение уникальный значений
+ORDER BY - сортировка данных
+DESC - сортировка по убыванию
+ASC - сортировка по возрастанию
+
+
 CREATE DATABASE testDB
 DROP DATABASE testDB
 BACKUP DATABASE testDB TO DISK path [WITH DIFFERENTIAL]

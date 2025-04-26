@@ -1,0 +1,23 @@
+БУЛЕВЫ:
+
+boolean
+
+
+ЧИСЛА:
+
+smallint
+integer
+bigint
+
+decimal = numeric
+real
+double
+
+smallserial
+serial
+bigserial
+
+
+СТРОКИ:
+bit
+bit varying
