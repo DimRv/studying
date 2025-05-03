@@ -9,7 +9,17 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "OPTIONS": {
             "service": "my_service",
-            "passfile": ".my_pgpass",
         },
     }
 }
+
+Настройки
+C:\Users\postgres\AppData\Roaming\postgresql\
+.pg_service.conf:
+
+[my_service]
+host=localhost
+user=postgres
+password=TYPE_PASSWORD
+dbname=Builtins
+port=5432
