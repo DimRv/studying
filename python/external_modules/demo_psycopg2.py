@@ -1,3 +1,4 @@
+from pprint import pprint
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
@@ -20,7 +21,7 @@ def show_data():
     sql = "SELECT * FROM cars"
     cursor.execute(sql)  # Запустим sql на сервере
     data = cursor.fetchall()  # Получим список объектов, каждый объект описывает одну запись
-    # pprint(data)
+    pprint(data)
     for item in data:
         print(f"{item['title']} стоит {item['price']}")
 

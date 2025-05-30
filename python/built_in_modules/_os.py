@@ -28,7 +28,7 @@ if __name__ == "__main__":
     print([item for item in dir(os) if not item.startswith("_")])
     print(os.name)
     print(os.environ)
-    print(os.uname())
+    #print(os.uname())
     print(os.sep, os.path.sep)
     print(os.getcwd())
     print(os.listdir("C:\\"))
